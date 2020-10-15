@@ -6,6 +6,7 @@ body {
 	font-family: "FasterOne-Regular";
 	src:url("fonts/FasterOne-Regular.ttf");
 }
+
 @font-face{
 	font-family:Monoton-Regular;
 	src:url("fonts/Monoton-Regular.ttf");
@@ -29,6 +30,7 @@ ul {
 	margin-right: 25px;
 
 }
+
 ul li a:hover,
 ul li a:focus {
 	background: rgba(255,255,255, .2);
@@ -38,7 +40,6 @@ ul li a:focus {
 	0 -3px 0 hsl(210,100%, 54%) inset,
 	0 -4px 0 hsl(210,100%, 60%) inset,
 	0 -5px 0 hsl(210,100%, 70%) inset,
-	transition: padding .3s, background .3s;
 }
 
 ul li a:active{
@@ -47,6 +48,7 @@ ul li a:active{
 }
 
 a{
+	
 	text-decoration: none;
 	color: rgba(0,0,0, .7);
 	border-left: solid black;
@@ -56,15 +58,52 @@ a{
 	padding-top: 8px;
 	padding-bottom: 8px;
 	border-width:1px; 
+
 }
 
 ul li {
+	
 	padding: 8px;
 	border: 30;
 	color: rgb(110,110,110);
 	display: table-cell;
 	text-shadow: 0 1px 0 rgba(255,255,255, .4);
+
 }
+
+
+
+.sous{
+display: none;	
+}
+
+
+.sous li{
+float: none;
+width: 100%;
+text-align: left;
+}
+
+.sous a{
+	display: flex;
+flex-direction: column;
+
+	padding: 10px;
+	border-bottom: none;
+}
+
+.sous a:hover{
+border-bottom: none;
+
+
+}
+
+.deroulant > a:after{
+	content:"▼";
+
+}
+
+
 h1{
 	font-family: "Monoton-Regular";
 	color: #e71837;

@@ -1,3 +1,33 @@
+let sous = document.getElementsByClassName("sous");
+let art = document.getElementById("art");
+
+art.addEventListener("mouseover", openArticle)
+art.addEventListener("click", closeArticle)
+
+function openArticle() {
+    for (let index = 0; index < sous.length; index++) {
+        const element = sous[index];
+        
+    element.style.display = "block";
+    }
+
+}
+
+
+function closeArticle() {
+    for (let index = 0; index < sous.length; index++) {
+        const element = sous[index];
+        console.log(element);
+    element.style.display = "none";
+    }
+}
+
+
+
+
+
+
+
 let naru = document.getElementById("narutoimg");
 let hunt = document.getElementById("Hunterimg");
 
